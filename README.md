@@ -1,6 +1,7 @@
 GROUP NAME: Chicken Tenders
 
 NAMES:
+
   Nicholas Perez (github user : pokeysnake)
       - Tasks Completed: Entire NFA including the floating point extra credit (NFA for steps 1-3 on canvas)
 
