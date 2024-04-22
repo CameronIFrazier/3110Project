@@ -26,16 +26,16 @@ DISCLAIMER: 3rdtry.py was a version of trying to implement the extra credit floa
 
 - FINAL SUBMISSION FILES:
   
-    transitionable.py
+    - transitionable.py
   
-    jflapFINAL.jff
+    - jflapFINAL.jff
   
-    jflapFINALPICTURE.jpg
+    - jflapFINALPICTURE.jpg
 
 - EXTRA CREDIT FILES:
   
-    jflapEXTRACREDIT.jff
+    - jflapEXTRACREDIT.jff
   
-    jflapEXTRACREDITPICTURE.jpg
+    - jflapEXTRACREDITPICTURE.jpg
 
-    3rdtry.py
+    - 3rdtry.py
