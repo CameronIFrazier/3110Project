@@ -1,10 +1,10 @@
-state_transitiontable_table = {
+state_transitions = {
     'q0': {'1':'deci accepting state', '2':'deci accepting state', '3':'deci accepting state', '4':'deci accepting state', '5':'deci accepting state',
            '6':'deci accepting state', '7':'deci accepting state', '8':'deci accepting state', '9':'deci accepting state'},
     'q19':{'0':'deci accepting state','1':'deci accepting state', '2':'deci accepting state', '3':'deci accepting state', '4':'deci accepting state', '5':'deci accepting state',
         '6':'deci accepting state', '7':'deci accepting state', '8':'deci accepting state', '9':'deci accepting state'},
     'deci accepting state': {'0':'deci accepting state','1':'deci accepting state', '2':'deci accepting state', '3':'deci accepting state', '4':'deci accepting state', '5':'deci accepting state',
-        '6':'deci accepting state', '7':'deci accepting state', '8':'deci accepting state', '9':'deci accepting state', '8':'deci accepting state','9':'deci accepting state', "_": 'q19'},
+        '6':'deci accepting state', '7':'deci accepting state', '8':'deci accepting state', '9':'deci accepting state', "_": 'q19'},
 
 
     'q8': {'B':'q13', 'b': 'q13', "_": 'rejected'},
@@ -40,10 +40,10 @@ state_transitiontable_table = {
     'q24': {'0':'octa accepting state', '1':'octa accepting state', '2':'octa accepting state', '3':'octa accepting state', '4':'octa accepting state',
             '5':'octa accepting state', '6':'octa accepting state', '7':'octa accepting state', '_':'q23'},
     'octa accepting state': {'0':'octa accepting state', '1':'octa accepting state', '2':'octa accepting state', '3':'octa accepting state', '4':'octa accepting state',
-            '5':'octa accepting state', '6':'octa accepting state', '7':'octa accepting state', '_':'q23'}
-
+            '5':'octa accepting state', '6':'octa accepting state', '7':'octa accepting state', '_':'q23'},
 
 }
+
 
 temp = 'q0'
 ui = input("Please enter a string with no spaces: ")
@@ -62,15 +62,19 @@ for index, char in enumerate(ui):
         print("You are now in " + temp)
         continue
     try:
-        temp = state_transitiontable_table[temp][char]
+        temp = state_transitions[temp][char]
         print("You are now in " + str(temp))
     except KeyError:
-        print("Invalid Literal. You entered a character that isn't acceptable. Keep in mind there can be no spaces.")
+        print("Invalid Literal. You entered a character that isn't acceptable. Keep in mind there can be no spaces or special character in a literal.")
+        temp = "rejected"
+        break
 
-if temp =='hexi accpeting state' or temp == 'octa accepting state' or temp == 'binary accepting state' or temp == 'deci accepting state':
+if temp =='hexi accepting state' or temp == 'octa accepting state' or temp == 'binary accepting state' or temp == 'deci accepting state':
     print("Valid Literal")
 else:
     print("Invalid Literal")
         
+
+
+
        
-'''need to put try catch around trans table in case the string contains something not in the dictionary'''
