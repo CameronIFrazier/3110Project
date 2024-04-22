@@ -1,6 +1,6 @@
-GROUP NAME: Chicken Tenders
+- GROUP NAME: Chicken Tenders
 
-NAMES:
+- NAMES:
 
   Nicholas Perez (github user : pokeysnake)
       - Tasks Completed: Entire NFA including the floating point extra credit (NFA for steps 1-3 on canvas)
@@ -16,7 +16,7 @@ NAMES:
       
 DISCLAIMER: 3rdtry.py was a version of trying to implement the extra credit float section of the project. It didn't work like an NFA, and was made entirely out of if statments so it wasn't used in the finalized version. The version of the code conating our actual literal checker (the first two steps of the project for a combined total of 100 points) is the file transitiontable.py.
 
--DESCRIPTION:
+- DESCRIPTION:
 
   NFA DOWNLOADS:
     - An ascending order list of the NFAs' progression as it was being optimized and finalized
