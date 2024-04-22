@@ -13,3 +13,5 @@ NAMES:
 
   Jeffrey Hoang (github user: JeffreyHoang)
       - Tasks Completed: Implementation of first 2 steps in Java, which the team was able to use as a rough draft to expand upon
+      
+DISCLAIMER: 3rdtry.py was a version of trying to implement the extra credit float section of the project. It didn't work like an NFA, and was made entirely out of if statments so it wasn't used in the finalized version. The version of the code conating our actual literal checker (the first two steps of the project for a combined total of 100 points) is the file transitiontable.py.
